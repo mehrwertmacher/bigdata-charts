@@ -32,7 +32,7 @@ if [[ $2 == "datanode" ]]; then
     mkdir -p /dfs/data
     fi
     #  wait up to 30 seconds for namenode
-    (while [[ $count -lt 15 && -z `curl -sf http://{{ include "hdfs.fullname" . }}-namenode:50070` ]]; do ((count=count+1)) ; echo "Waiting for {{ include "hdfs.fullname" . }}-namenode" ; sleep 2; done && [[ $count -lt 15 ]])
+    (while [[ $count -lt 15 && -z $(curl -sf http://{{ include "hdfs.fullname" . }}-namenode:9870) && -z $(curl -sf http://{{ include "hdfs.fullname" . }}-namenode:50070) ]]; do ((count=count+1)) ; echo "Waiting for {{ include "hdfs.fullname" . }}-namenode" ; sleep 2; done && [[ $count -lt 15 ]])
     [[ $? -ne 0 ]] && echo "Timeout waiting for hdfs namenode, exiting." && exit 1
 
     $HADOOP_HOME/sbin/hadoop-daemon.sh start datanode

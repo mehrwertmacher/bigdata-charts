@@ -29,6 +29,9 @@ The Apache Hadoop software library is a framework that allows for the distribute
 | dataNode.resources.limits.memory | string | `"2048Mi"` |  |
 | dataNode.resources.requests.cpu | string | `"10m"` |  |
 | dataNode.resources.requests.memory | string | `"256Mi"` |  |
+| dataNode.port | int | `9867` |  |
+| dataNode.httpPort | int | `9864` |  |
+| dataNode.httpsPort | int | `9865` |  |
 | httpfs.adminPort | int | `14001` |  |
 | httpfs.port | int | `14000` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
@@ -50,7 +53,9 @@ The Apache Hadoop software library is a framework that allows for the distribute
 | ingress.nameNode.labels | object | `{}` |  |
 | ingress.nameNode.path | string | `"/"` |  |
 | nameNode.pdbMinAvailable | int | `1` |  |
-| nameNode.port | int | `8020` |  |
+| nameNode.port | int | `9820` |  |
+| nameNode.httpPort | int | `9870` |  |
+| nameNode.httpsPort | int | `9871` |  |
 | nameNode.resources.limits.cpu | string | `"1000m"` |  |
 | nameNode.resources.limits.memory | string | `"2048Mi"` |  |
 | nameNode.resources.requests.cpu | string | `"10m"` |  |

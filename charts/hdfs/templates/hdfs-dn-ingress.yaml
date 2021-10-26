@@ -25,6 +25,6 @@ spec:
           - path: {{ $ingressPath }}
             backend:
               serviceName: {{ $fullname }}-datanode
-              servicePort: 50075
+              servicePort: {{ .Values.datanode.httpPort }}
   {{- end }}
 {{- end }}
