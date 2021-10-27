@@ -22,7 +22,7 @@ Store and serve massive amounts of time series data without losing granularity.
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://gradiant.github.io/charts | hbase | ~0.1.6 |
+| file://../hbase | hbase | ~0.1.6 |
 
 ## Values
 

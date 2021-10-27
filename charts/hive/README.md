@@ -22,8 +22,8 @@ The Apache Hive ™ data warehouse software facilitates reading, writing, and ma
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://gradiant.github.io/charts | hdfs | ~0.1.10 |
-| https://gradiant.github.io/charts | metastore(hive-metastore) | ~0.1.3 |
+| file://../hdfs | hdfs | ~0.1.10 |
+| file://../hive-metastore | metastore(hive-metastore) | ~0.1.3 |
 
 ## Values
 

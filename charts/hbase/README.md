@@ -16,8 +16,8 @@ HBase is an open-source non-relational distributed database modeled after Google
 
 | Repository | Name | Version |
 |------------|------|---------|
+| file://../hdfs | hdfs | ~0.1.10 |
 | https://charts.bitnami.com/bitnami | zookeeper | ~6.3.0 |
-| https://gradiant.github.io/charts | hdfs | ~0.1.10 |
 
 ## Values
 
