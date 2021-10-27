@@ -74,13 +74,13 @@ spec:
         readinessProbe:
           httpGet:
             path: /
-            port: {{ .Values.datanode.httpPort }}
+            port: {{ .Values.dataNode.httpPort }}
           initialDelaySeconds: 5
           timeoutSeconds: 2
         livenessProbe:
           httpGet:
             path: /
-            port: {{ .Values.datanode.httpPort }}
+            port: {{ .Values.dataNode.httpPort }}
           initialDelaySeconds: 10
           timeoutSeconds: 2
         volumeMounts:
