@@ -8,7 +8,8 @@ icon: http://hadoop.apache.org/images/hadoop-logo.jpg
 maintainers:
 - email: ricardo.seider@diemehrwertmacher.de
   name: rcreate
+  url: https://www.diemehrwertmacher.de
 name: hdfs
 sources:
 - https://github.com/apache/hadoop
-version: 0.1.15
+version: 1.0.0

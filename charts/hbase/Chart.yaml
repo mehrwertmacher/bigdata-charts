@@ -8,11 +8,11 @@ maintainers:
 - email: cgiraldo@gradiant.org
   name: cgiraldo
 name: hbase
-version: 0.1.6
+version: 0.1.7
 dependencies:
 - name: hdfs
   version: ~0.1.10
-  repository: file://../hdfs
+  repository: https://gradiant.github.io/charts
   condition: hdfs.enabled
 - name: zookeeper
   version: ~6.3.0

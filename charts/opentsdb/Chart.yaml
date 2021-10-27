@@ -13,7 +13,7 @@ maintainers:
 - email: cgiraldo@gradiant.org
   name: cgiraldo
 name: opentsdb
-version: 0.1.7
+version: 0.1.8
 keywords:
   - hadoop
   - hbase
@@ -23,6 +23,6 @@ keywords:
 dependencies:
 - name: hbase
   version: ~0.1.6
-  repository: file://../hbase
+  repository: https://gradiant.github.io/charts
   condition: hbase.enabled
 
