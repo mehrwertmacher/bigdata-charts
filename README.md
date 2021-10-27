@@ -11,13 +11,13 @@ charts in `charts/`` folder are packaged and available at Gradiant's helm repo:
 You can add the helm repo to your Helm CLI:
 
 ```bash
-helm repo add bigdata-dmwm https://mehrwertmacher.github.io/bigdata-charts/
+helm repo add dmwm-bigdata https://mehrwertmacher.github.io/bigdata-charts/
 ```
 
 Then you have a collection of charts available to install. For example, to install hdfs:
 
 ```bash
-helm install --name hdfs bigdata-dmwm/hdfs
+helm install --name hdfs dmwm-bigdata/hdfs
 ```
 
 ## Install chart from release
