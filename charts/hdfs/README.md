@@ -1,6 +1,6 @@
 # hdfs
 
-![Version: 0.1.10](https://img.shields.io/badge/Version-0.1.10-informational?style=flat-square) ![AppVersion: 2.7.7](https://img.shields.io/badge/AppVersion-2.7.7-informational?style=flat-square)
+![Version: 0.1.13](https://img.shields.io/badge/Version-0.1.13-informational?style=flat-square) ![AppVersion: 3.2.2](https://img.shields.io/badge/AppVersion-3.2.2-informational?style=flat-square)
 
 The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using simple programming models.
 
@@ -10,7 +10,7 @@ The Apache Hadoop software library is a framework that allows for the distribute
 
 | Name | Email | Url |
 | ---- | ------ | --- |
-| cgiraldo | cgiraldo@gradiant.org |  |
+| rcreate | ricardo.seider@diemehrwertmacher.de |  |
 
 ## Source Code
 
