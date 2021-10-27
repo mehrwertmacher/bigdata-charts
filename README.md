@@ -6,26 +6,26 @@ Curated Big Data charts for Kubernetes.
 
 charts in `charts/`` folder are packaged and available at Gradiant's helm repo:  
 
-[https://gradiant.github.io/bigdata-charts/](https://gradiant.github.io/bigdata-charts/)
+[https://mehrwertmacher.github.io/bigdata-charts/](https://mehrwertmacher.github.io/bigdata-charts/)
 
 You can add the helm repo to your Helm CLI:
 
 ```bash
-helm repo add bigdata-gradiant https://gradiant.github.io/bigdata-charts/
+helm repo add bigdata-dmwm https://mehrwertmacher.github.io/bigdata-charts/
 ```
 
 Then you have a collection of charts available to install. For example, to install hdfs:
 
 ```bash
-helm install --name hdfs bigdata-gradiant/hdfs
+helm install --name hdfs bigdata-dmwm/hdfs
 ```
 
 ## Install chart from release
 
-install using the URL of the release. For example, to install hdfs v0.1.0 chart:
+install using the URL of the release. For example, to install hdfs v0.1.11 chart:
 
 ```bash
-helm install --name hdfs https://github.com/Gradiant/bigdata-charts/releases/download/hdfs-0.1.0/hdfs-0.1.0.tgz
+helm install --name hdfs https://github.com/mehrwertmacher/bigdata-charts/releases/download/hdfs-0.1.11/hdfs-0.1.11.tgz
 ```
 
 ## Development
@@ -49,7 +49,7 @@ Test specific chart, lint and install, send console logs also to the log file `r
 ```bash
 scripts/ct.sh lint-and-install \
     --charts charts/hdfs/ \
-    --chart-repos incubator=https://kubernetes-charts-incubator.storage.googleapis.com/,gradiant=https://gradiant.github.io/bigdata-charts \
+    --chart-repos incubator=https://kubernetes-charts-incubator.storage.googleapis.com/,dmwm=https://mehrwertmacher.github.io/bigdata-charts \
     | tee reports/hdfs.log
 ```
 
@@ -82,7 +82,7 @@ scripts/ct.sh lint-and-install \
     --check-version-increment \
     --upgrade \
     --charts charts/hdfs/ \
-    --chart-repos incubator=https://kubernetes-charts-incubator.storage.googleapis.com/,gradiant=https://gradiant.github.io/bigdata-charts \
+    --chart-repos incubator=https://kubernetes-charts-incubator.storage.googleapis.com/,dmwm=https://mehrwertmacher.github.io/bigdata-charts \
     | tee reports/hdfs.log
 ```
 
